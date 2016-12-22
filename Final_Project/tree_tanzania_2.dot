@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="quantity <= 1.5\ngini = 0.4732\nsamples = 59400\nvalue = [22824, 36576]"] ;
+1 [label="source <= 1.5\ngini = 0.4266\nsamples = 48315\nvalue = [14901, 33414]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="quantity <= 0.5\ngini = 0.3507\nsamples = 15879\nvalue = [3601, 12278]"] ;
+1 -> 2 ;
+3 [label="gini = 0.2962\nsamples = 10835\nvalue = [1959, 8876]"] ;
+2 -> 3 ;
+4 [label="gini = 0.4391\nsamples = 5044\nvalue = [1642, 3402]"] ;
+2 -> 4 ;
+5 [label="source <= 7.5\ngini = 0.454\nsamples = 32436\nvalue = [11300, 21136]"] ;
+1 -> 5 ;
+6 [label="gini = 0.4494\nsamples = 31790\nvalue = [10839, 20951]"] ;
+5 -> 6 ;
+7 [label="gini = 0.4087\nsamples = 646\nvalue = [461, 185]"] ;
+5 -> 7 ;
+8 [label="quantity <= 2.5\ngini = 0.4078\nsamples = 11085\nvalue = [7923, 3162]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="source <= 0.5\ngini = 0.0602\nsamples = 6246\nvalue = [6052, 194]"] ;
+8 -> 9 ;
+10 [label="gini = 0.0385\nsamples = 1628\nvalue = [1596, 32]"] ;
+9 -> 10 ;
+11 [label="gini = 0.0677\nsamples = 4618\nvalue = [4456, 162]"] ;
+9 -> 11 ;
+12 [label="quantity <= 3.5\ngini = 0.4743\nsamples = 4839\nvalue = [1871, 2968]"] ;
+8 -> 12 ;
+13 [label="gini = 0.4375\nsamples = 4050\nvalue = [1309, 2741]"] ;
+12 -> 13 ;
+14 [label="gini = 0.4099\nsamples = 789\nvalue = [562, 227]"] ;
+12 -> 14 ;
+}

@@ -1,0 +1,32 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="quantity <= 1.5\ngini = 0.4732\nsamples = 59400\nvalue = [22824, 36576]"] ;
+1 [label="waterpoint_type <= 2.5\ngini = 0.4266\nsamples = 48315\nvalue = [14901, 33414]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="construction_year <= 1998.5\ngini = 0.3898\nsamples = 43155\nvalue = [11446, 31709]"] ;
+1 -> 2 ;
+3 [label="gini = 0.4283\nsamples = 25346\nvalue = [7874, 17472]"] ;
+2 -> 3 ;
+4 [label="gini = 0.3207\nsamples = 17809\nvalue = [3572, 14237]"] ;
+2 -> 4 ;
+5 [label="waterpoint_type <= 3.5\ngini = 0.4425\nsamples = 5160\nvalue = [3455, 1705]"] ;
+1 -> 5 ;
+6 [label="gini = 0.351\nsamples = 4294\nvalue = [3319, 975]"] ;
+5 -> 6 ;
+7 [label="gini = 0.2648\nsamples = 866\nvalue = [136, 730]"] ;
+5 -> 7 ;
+8 [label="quantity <= 2.5\ngini = 0.4078\nsamples = 11085\nvalue = [7923, 3162]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="latitude <= -5.03\ngini = 0.0602\nsamples = 6246\nvalue = [6052, 194]"] ;
+8 -> 9 ;
+10 [label="gini = 0.0296\nsamples = 4259\nvalue = [4195, 64]"] ;
+9 -> 10 ;
+11 [label="gini = 0.1223\nsamples = 1987\nvalue = [1857, 130]"] ;
+9 -> 11 ;
+12 [label="waterpoint_type <= 2.5\ngini = 0.4743\nsamples = 4839\nvalue = [1871, 2968]"] ;
+8 -> 12 ;
+13 [label="gini = 0.4342\nsamples = 4130\nvalue = [1316, 2814]"] ;
+12 -> 13 ;
+14 [label="gini = 0.3401\nsamples = 709\nvalue = [555, 154]"] ;
+12 -> 14 ;
+}
